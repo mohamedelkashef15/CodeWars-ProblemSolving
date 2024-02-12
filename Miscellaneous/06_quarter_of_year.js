@@ -9,7 +9,6 @@
   - else if value of month from 4 - 7 then print quarter 2
   - else if value of month from 7 - 10 then print quarter 3
   - else if value of month from 10 - 12 then print quarter 4
-  - else print correct month
 */
 
 const quarterOf = (month) => {
@@ -27,3 +26,14 @@ const quarterOf = (month) => {
     return "Enter correct month";
   }
 };
+
+// Better solution
+const quarterOf2 = function (month) {
+  if (month >= 1 && month <= 12) {
+    return `You are in quarter ${Math.ceil(month / 3)}`;
+  } else {
+    return "Enter correct month";
+  }
+};
+
+console.log(quarterOf2(10));
