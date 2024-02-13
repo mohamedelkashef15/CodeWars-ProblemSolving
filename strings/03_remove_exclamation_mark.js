@@ -4,22 +4,20 @@
 
   Algorithms
   - loop through each character 
-  - check if chracter is ! then remove it else print it
+  - check if chracter is not equals to ! then add it to new string
 */
 
 function removeExclamationMarks(s) {
   let newString = "";
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === "!") {
-      newString += "";
-    } else {
+    if (s[i] !== "!") {
       newString += s[i];
     }
   }
   return newString;
 }
 
-console.log(removeExclamationMarks("Hello!"));
+console.log(removeExclamationMarks("He!llo!"));
 
 // Using map
 const removeExclamationMarks2 = (s) => {
