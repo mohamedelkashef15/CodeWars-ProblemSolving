@@ -11,6 +11,6 @@ String.prototype.isUpperCase = function () {
   return this.valueOf() === this.toUpperCase();
 };
 
-function isUpperCase(str) {
+function isAllCaps(str) {
   return str === str.toUpperCase();
 }
