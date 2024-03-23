@@ -21,10 +21,10 @@
 */
 export function peopleWithAgeDrink(age: number): string {
   if (age >= 0 && age < 14) return "drink toddy";
-  else if (age >= 14 && age < 18) return "drink coke";
-  else if (age >= 18 && age < 21) return "drink beer";
-  else if (age >= 21 && age < 100) return "drink whisky";
-  else return "Enter correct age";
+  if (age >= 14 && age < 18) return "drink coke";
+  if (age >= 18 && age < 21) return "drink beer";
+  if (age >= 21 && age < 100) return "drink whisky";
+  return "Enter correct age";
 }
 
 // Tests
