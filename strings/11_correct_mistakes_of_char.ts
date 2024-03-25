@@ -19,10 +19,18 @@
 */
 
 export function correct(s: string): string {
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] === "0") {
-      s[i] = "S";
-    }
-  }
-  return s;
+  return s
+    .split("")
+    .map((char) => {
+      if (char === "5") return "S";
+      else if (char === "0") return "O";
+      else if (char === "1") return "I";
+      else return char;
+    })
+    .join("");
+}
+
+// Using replace method
+export function correct2(s: string): string {
+  return s.replace("/5/g", "S").replace("/0/g", "O").replace("/1/g", "I");
 }
