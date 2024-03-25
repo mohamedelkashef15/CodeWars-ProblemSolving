@@ -14,7 +14,7 @@ export function hero(bullets: number, dragons: number): boolean {
 }
 
 // Using Arrow function
-const hero2 = (bullets: number, dragons: number): boolean => bullets >= dragons * 2;
+// const hero2 = (bullets: number, dragons: number): boolean => bullets >= dragons * 2;
 
 console.log(hero(10, 5));
 console.log(hero(7, 4));
