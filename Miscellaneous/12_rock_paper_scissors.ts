@@ -33,7 +33,7 @@ export function rps(p1: string, p2: string): string {
 
 // Method 2
 export function rps2(p1: string, p2: string): string {
-  const rules: any = {
+  const rules: Record<string, string> = {
     rock: "scissors",
     paper: "rock",
     scissors: "paper",
