@@ -30,7 +30,20 @@ export function correct(s: string): string {
     .join("");
 }
 
+// Using for loop
+function correct2(s: string): string {
+  let newString = "";
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "5") newString += "S";
+    else if (s[i] === "0") newString += "O";
+    else if (s[i] === "1") newString += "I";
+    else newString += s[i];
+  }
+  return newString;
+}
+console.log(correct2("L0ND0N"));
+
 // Using replace method
-export function correct2(s: string): string {
+export function correct3(s: string): string {
   return s.replace("/5/g", "S").replace("/0/g", "O").replace("/1/g", "I");
 }
