@@ -16,6 +16,7 @@ export function twoSort(s: string[]) {
   return s.sort()[0].split("").join("***");
 }
 
+// Test Cases
 console.log(
   twoSort(["turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones"])
 );
