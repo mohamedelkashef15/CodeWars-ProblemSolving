@@ -19,3 +19,11 @@ export function setAlarm(employed: boolean, vacation: boolean): boolean {
   }
   return false;
 }
+
+// Another Solution
+export function setAlarm2(employed: boolean, vacation: boolean) {
+  return employed && !vacation;
+}
+/*
+  employed = true && !vacation = true
+*/
