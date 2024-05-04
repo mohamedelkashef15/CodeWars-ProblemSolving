@@ -22,3 +22,9 @@ export function findSmallestInt(args: number[]): number {
 export function findSmallestInt2(args: number[]): number {
   return Math.min(...args);
 }
+
+// Using sort
+export function findSmallestInt3(args: number[]): number {
+  args.sort((a, b) => a - b);
+  return args[0];
+}
