@@ -10,6 +10,7 @@
   - to get the average we need to sum all numbers inside array then divide them by the number of elements inside array
 
 */
+
 export function getAverage(marks: number[]): number {
   // Check empty array
   if (marks.length === 0) {
