@@ -19,7 +19,6 @@ export function DNAtoRNA(dna: string): string {
 }
 
 // Using replaceAll method
-export function DNAtoRNA2(dna: string): string {
-  return dna.replaceAll("T", "U");
-}
-console.log(DNAtoRNA2("TTT"));
+// export function DNAtoRNA2(dna: string): string {
+//   return dna.replaceAll("T", "U");
+// }
