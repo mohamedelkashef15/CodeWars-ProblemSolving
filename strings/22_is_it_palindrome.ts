@@ -30,3 +30,8 @@ export function isPalindrome2(x: string): boolean {
   }
   return true;
 }
+
+// Using methods
+export function isPalindrome3(x: string): boolean {
+  return x.toLowerCase().split("").reverse().join("") === x.toLowerCase();
+}
