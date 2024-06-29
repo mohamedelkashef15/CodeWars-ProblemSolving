@@ -20,5 +20,8 @@ export const digitize = (n: number): number[] => {
 };
 
 // Using map
-export const digitize2 = (n: number): number[] => {};
+export const digitize2 = (n: number): number[] => {
+  return [...n.toString()].map((num) => +num).reverse();
+};
 console.log(digitize(35231));
+console.log(digitize2(35231));
