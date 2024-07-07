@@ -1,4 +1,3 @@
-import { updateLight3 } from "./17_thinkful_trafic_lights";
 /*
   Problem definition
   => You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again.
@@ -38,7 +37,7 @@ export function updateLight2(current: string): string {
 
 type lightColor = "green" | "yellow" | "red";
 
-const lights: Record<lightColor, lightColor> = {
+const lights = {
   green: "yellow",
   yellow: "red",
   red: "green",
